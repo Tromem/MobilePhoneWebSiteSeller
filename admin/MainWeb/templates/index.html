@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+{%load static%}
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href={%static 'css/styles.css' %}>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{%block title%}MyPhones 📱{%endblock%}</title>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="header-line">
+                <div class="Logosite">
+                   <h1 class="nav-item" >MyPhones 📱</h1>
+                </div>
+                <div class="nav">
+                    <a href="@" class="nav-item"><h2> Каталог товаров</h2></a>
+                </div>
+                <div class="userpic">
+                    <a href="@">
+                        <img src={%static "img/userpic.png"%} alt="">
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
