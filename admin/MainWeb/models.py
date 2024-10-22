@@ -16,6 +16,7 @@ class Seller(models.Model):
     garant = models.CharField(max_length=100,name='Гарантия')
     image = models.ImageField(name='Фото', upload_to="./MainWeb/static/img")
     
+
     class Meta:
         verbose_name = "Товар"
         verbose_name_plural = "Товары"
@@ -39,6 +40,4 @@ class Acess(models.Model):
 
     def get_absolute_url(self):
         return reverse("_detail", kwargs={"pk": self.pk})
-class UserAnonim(User):
-    pass
-    
+
