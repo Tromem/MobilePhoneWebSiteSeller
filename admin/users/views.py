@@ -2,5 +2,5 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 # Create your views here.
-def timing(req):
-    return HttpResponse('хуй')
+def Login(req):
+    return render(req, 'Login.html')
